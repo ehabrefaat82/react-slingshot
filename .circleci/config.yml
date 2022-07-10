@@ -5,19 +5,19 @@ jobs:
       - image: cimg/node:18.4.0
     steps:
       - checkout
-      - run: npm run lint
+      - run:  npm --version
   test:
     docker:
       - image: cimg/node:18.4.0
     steps:
       - checkout
-      - run: npm run test
+      - run:  npm --version
   analyze:
     docker:
       - image: cimg/node:18.4.0
     steps:
       - checkout
-      - run: npm audit
+      - run:  npm --version
 workflows:
   sdlc:
     jobs:
